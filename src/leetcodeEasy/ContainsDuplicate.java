@@ -2,6 +2,9 @@ package leetcodeEasy;
 
 import java.util.HashSet;
 
+import org.junit.Test;
+
+import static org.junit.Assert.*;
 public class ContainsDuplicate {
 	// Given an array of integers, find if the array contains any duplicates.
 	// Your function should return true if any value appears at least twice in
@@ -18,4 +21,13 @@ public class ContainsDuplicate {
 		}
 		return false;
 	}
+	
+	@Test
+	public void test1(){
+		int [] nums={1,1,2,3,4,5};
+		ContainsDuplicate containdu=new ContainsDuplicate();
+		assertTrue(containdu.containsDuplicate(nums));
+	}
 }
+
+
